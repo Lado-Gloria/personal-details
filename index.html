@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+
+<head>
+ 
+    <title>Basic form design using HTML</title>
+</head>
+ 
+<body>
+
+    <div id="head">
+    <h1>Personal Identification</h1>
+ 
+    <h3>prepared by Gloria</h3>
+    </div>
+    <form action="#" style="width: 50%;">
+        <div class="main">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label>First name : <input name="firstName"/></label>
+            </p>
+ 
+            <p>
+                <label>Last name : <input name="lastName" /></label>
+            </p>
+            <p>
+                Gender :
+                <label><input type="radio" name="gender"
+                    value="male" /> Male</label>
+ 
+                <label><input type="radio" name="gender"
+                    value="female" /> Female</label>
+            </p>
+ 
+            <p>
+                <label>Email : <input type="email"
+                    name="email" /></label>
+            </p>
+        
+            <p>
+                <label>Date of Birth : <input type="date"
+                    name="birthDate"></label>
+            </p>
+            <p>
+                <label>Address :
+                    <br />
+                    <textarea name="address" cols="30"
+                        rows="3"></textarea>
+                </label>
+            </p>
+            <p>
+                <button type="submit" id="sub">Submit</button> 
+            </p>
+            <h2>Personal Statement</h2>
+            <p>Gloria Ladoo is a Software Development student, she is passion in
+                 helping community, young people,currently learning and exploring
+                  various technologies.
+                I take every day as a learning process and am willing to connect 
+                and learn from different individuals within the tech ecosystem.</p>
+
+        </fieldset>
+        </div>
+        <div id="images">
+            <img src="image/IMG-20230325-WA0007.jpg" alt="" style="width: 50%; height: 50%;">
+            </div>
+            <script>
+                const image = document.getElementById("images");
+                image.addEventListener("click", function() {
+                  alert("your lovely image!");
+
+                  addDarkBackground();
+                });
+
+
+                function addDarkBackground() {
+                const body = document.getElementsByTagName("body")[0];
+
+                if (body.classList.contains("dark-bg")) {
+                 body.classList.remove("dark-bg");
+                  image.style.opacity = 1;
+               } else {
+                    body.classList.add("dark-bg");
+                   image.style.opacity = 0.2;
+              }
+                  }
+            //     const imagee = document.getElementById("images");
+            //     imagee.addEventListener("mouseover", function() {
+            //     image.src ="image/IMG-20230325-WA0007.jpg";
+            //     alert("that's me")
+            //    });
+            //     image.addEventListener("mouseout", function() {
+            //       image.src = "image/IMG-20230325-WA0007.jpg";
+            //       });
+              </script>
+    </form>
+</body>
+ 
+</html>

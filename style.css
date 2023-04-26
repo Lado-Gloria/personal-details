@@ -1,0 +1,15 @@
+#images{
+    position: relative;
+    left: 45%;
+    bottom: 460px;
+}
+.main{
+    background-color: rgb(224, 219, 228);
+}
+#sub{
+    background-color: rgb(177, 228, 172);
+}
+#head{
+    position: relative;
+    left: 20%;
+}
